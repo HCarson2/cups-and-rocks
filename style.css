@@ -1,0 +1,8 @@
+.gameOver{
+   background-size: cover; 
+}
+.hidden{
+    background-size: cover;
+    
+    display: none;
+}
