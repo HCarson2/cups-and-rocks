@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    height: 100vh;
+    
+}
+.hidden{
+    display: none;
+    background-color: red;
+    text-align: center;
+}
+.imgWinner{
+    width: 40%;
+}
+#restart{
+    width: 200px;
+    height: 40px;
+}
+
+.scoreboard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+    border: solid white;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    /* border-bottom: 2px solid silver; */
+}
+.playerOne{
+    color: red;
+}
+.playerTwo{
+    color:blue;
+}
+
+.scoreboardPointsA{
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+}
+.scoreboardPointsB{
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+}
+.playerOneJustScored{
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+.playerTwoJustScored{
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
+}
