@@ -54,21 +54,41 @@ body{
     font-family: sans-serif;
     box-shadow: inset yellow;
 }
-.playerTwoJustScored{
-    border-radius: .35em;
-    font-weight: bold;
-    font-size: 1em;
-    font-family: sans-serif;
-    box-shadow: inset yellow;
-    transition: ease-out .2s;
-    outline: none;
-}
 .playerOneJustScored:hover{
     border-radius: .35em;
     font-weight: bold;
     font-size: 1em;
     font-family: sans-serif;
     background-color: yellow;
-    
+}
+.playerTwoJustScored{
+    border-radius: .35em;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
+    box-shadow: inset yellow;
+}
+.playerTwoJustScored:hover{
+    border-radius: .35em;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
+    background-color: yellow;
+}
+.cupParent{
+    /* display: flex;
+    margin-top: 10%;
+    border: solid red;  
+    justify-content: space-around;   */
 
+}
+.cup1{
+    border-radius: 50%;
+}
+.cup2{
+    border-radius: 50%;
+
+}
+.cup3{
+    border-radius: 50%;
 }

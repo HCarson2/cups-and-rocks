@@ -3,6 +3,7 @@
 //-----------------------------------------------------
 let scory = {
     scoreboardPointsA: 0,
+    scoreboardPointsB: 0,
 
     // scoreboardPointsA: 0
     // scoreboardPointsB: 0
@@ -26,11 +27,19 @@ let scory = {
 // button.addEventListener("click", function(){
 // });
 
-const a = () =>{
+const playA = () =>{
     scory.scoreboardPointsA++
     let screen = document.querySelector('.scoreboardPointsA')
     screen.textContent= `${scory.scoreboardPointsA}`
+    
+    if ('scoreboardPointsA' === 10){
+        imgWinner.classList.remove('hidden')
+    }
 }
+// const b = () =>{
+//     scory.scoreboardPointsB++
+//     let scan = document.querySelector('.scoreboardPointsB')
+//     screen.textContent= `${scory.scoreboardPointsB}`
 
 
 // playerTwoJustScored = scoreboardPointsB++;
@@ -50,6 +59,5 @@ const a = () =>{
 
 // let youWon = document.querySelector('#youWon')
 // let body = document.querySelector('body')
-// if (score === 10){
-//     gameOver.classList.remove('hidden')
-// }
+
+
