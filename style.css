@@ -1,5 +1,5 @@
 body{
-    background-color: red;
+    background-color: black;
     height: 100vh;
     
 }
@@ -19,17 +19,19 @@ body{
 .scoreboard{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 300px;
+    width: 400px;
     font-family: 'Quicksand', sans-serif;
     border: solid white;
     color: white;
     text-align: center;
     font-weight: bold;
     font-size: 1em;
+    margin-left: 35%;
     /* border-bottom: 2px solid silver; */
 }
 .playerOne{
     color: red;
+    
 }
 .playerTwo{
     color:blue;
@@ -46,14 +48,27 @@ body{
     text-align: center;
 }
 .playerOneJustScored{
-    border-radius: 50%;
+    border-radius: .35em;
     font-weight: bold;
     font-size: 1em;
     font-family: sans-serif;
+    box-shadow: inset yellow;
 }
 .playerTwoJustScored{
-    border-radius: 50%;
+    border-radius: .35em;
     font-weight: bold;
     font-size: 1em;
     font-family: sans-serif;
+    box-shadow: inset yellow;
+    transition: ease-out .2s;
+    outline: none;
+}
+.playerOneJustScored:hover{
+    border-radius: .35em;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
+    background-color: yellow;
+    
+
 }

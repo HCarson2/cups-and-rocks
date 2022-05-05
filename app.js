@@ -2,7 +2,7 @@
         //  Variables
 //-----------------------------------------------------
 let scory = {
-    points: 0,
+    scoreboardPointsA: 0,
 
     // scoreboardPointsA: 0
     // scoreboardPointsB: 0
@@ -27,9 +27,9 @@ let scory = {
 // });
 
 const a = () =>{
-    scory.points++
-    let screen = document.querySelector('.yes')
-    screen.textContent= `points : ${scory.points}`
+    scory.scoreboardPointsA++
+    let screen = document.querySelector('.scoreboardPointsA')
+    screen.textContent= `${scory.scoreboardPointsA}`
 }
 
 
