@@ -76,19 +76,29 @@ body{
     background-color: yellow;
 }
 .cupParent{
-    /* display: flex;
+    display: flex;
     margin-top: 10%;
-    border: solid red;  
-    justify-content: space-around;   */
-
-}
+    justify-content: space-around; 
+    }
 .cup1{
     border-radius: 50%;
+    border: solid red;
+    height: 175px;
+    width: 175px;
+    margin-left: 250px;
+    
 }
 .cup2{
     border-radius: 50%;
+    border: solid red;
+    height: 175px;
+    width: 175px;
 
 }
 .cup3{
     border-radius: 50%;
+    border: solid red;
+    height: 175px;
+    width: 175px;
+    margin-right: 250px;
 }
