@@ -88,17 +88,120 @@ body{
     margin-left: 250px;
     
 }
+
+.cupOne{
+    animation-name: rightroll;
+    animation-duration: 2s;   
+}
+  @keyframes rightroll {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px) rotate(540deg);
+              transform: translateX(1000px) rotate(540deg);
+      opacity: 0;
+    }
+  }
+  
 .cup2{
     border-radius: 50%;
     border: solid red;
     height: 175px;
     width: 175px;
+    
 
 }
+.cupTwo{
+    animation-name: bounceup;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes bounceup {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    5% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    15% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    25% {
+      -webkit-transform: translateY(-38px);
+              transform: translateY(-38px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    52% {
+      -webkit-transform: translateY(-75px);
+              transform: translateY(-75px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    70% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-800px);
+              transform: translateY(-800px);
+      opacity: 0;
+    }
+  }
 .cup3{
     border-radius: 50%;
     border: solid red;
     height: 175px;
     width: 175px;
     margin-right: 250px;
+    
 }
+.cupThree{
+    animation-name: leftroll;
+    animation-duration: 2s;
+}
+@-webkit-keyframes leftroll {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
+      opacity: 0;
+    }
+  }
+  .pebble{
+      margin-top: 250px;
+      height: 60px;
+      position: absolute;
+
+  }
+  #btn-start{
+      width: 50px;
+      height: 30px;
+      border: solid red;
+  }
