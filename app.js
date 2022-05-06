@@ -32,11 +32,17 @@ const animations = async () =>{
 const reveal = () =>{
     // console.log('abc')
   let randomNum =  Math.floor(Math.random() * 3);
-//   console.log(randomNum)
+  console.log(randomNum)
 if (randomNum ===0){
     console.log('winner')
-}else if (randomNum === 1){
+    }else if (randomNum === 1){
+        // <img src="https://i.gifer.com/3tfo.gif" alt="">
+        // document.getElementById('yourRWrong').src
+       let picture = document.createElement('img')
+       picture.setAttribute('src', 'https://i.gifer.com/3tfo.gif')
+       let shadow = document.querySelector('.hidden2')
     console.log('you lose')
+    shadow.append(picture)
 }else if(randomNum=== 2){
     console.log('almost')
 }else{
@@ -48,9 +54,9 @@ cup3.removeEventListener('click',reveal)
 
 }   
 
-cup1.addEventListener('click',reveal)
-cup2.addEventListener('click',reveal)
-cup3.addEventListener('click',reveal)
+// cup1.addEventListener('click',reveal)
+// cup2.addEventListener('click',reveal)
+// cup3.addEventListener('click',reveal)
 
 // function startGame(){
 
@@ -110,6 +116,24 @@ const playB = () =>{
 
 
 //-------------------------------------------------------
+
+const showME = () =>{
+    playerOne.score+=10
+    }
+
+const jordan = () =>{
+    let randomNum =  Math.floor(Math.random() * 3);
+    if (randomNum % 2===0){
+        let picture = document.createElement('img')
+        picture.setAttribute('src', 'https://i.gifer.com/3tfo.gif')
+        let shadow = document.querySelector('.hidden2')
+     console.log('you lose')
+     shadow.replaceWith(picture)
+     alert('you lose')
+     shadow.classList.toggle('ghost')
+    }
+}
+
 
 
 

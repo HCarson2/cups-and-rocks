@@ -197,11 +197,21 @@ body{
   .pebble{
       margin-top: 250px;
       height: 60px;
-      position: absolute;
+
+
+  }
+  .rock{
+    position: absolute;
 
   }
   #btn-start{
       width: 50px;
       height: 30px;
       border: solid red;
+  }
+  .wrongGirl{
+
+  }
+  .ghost{
+    display: none;
   }
