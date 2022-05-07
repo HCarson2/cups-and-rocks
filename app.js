@@ -18,31 +18,27 @@ const btnStart = document.getElementById('btn-start')
 let cup1 = document.querySelector('.cup1')
 let cup2 = document.querySelector('.cup2')
 let cup3 = document.querySelector('.cup3')
+// let pebble = document.querySelector('.pebble')
 
 const animations = async () =>{
    cup1.classList.add('cupOne')
-   cup2.classList.add('cupTwo')
+   cup2.classList.add('cupTwo')  
    cup3.classList.add('cupThree')
+//    pebble.classList.add('pebble')
    await wait(3000)
    cup1.classList.remove('cupOne')
    cup2.classList.remove('cupTwo')
    cup3.classList.remove('cupThree')
-
+//    pebble.classList.remove('pebble')
 }
 const reveal = () =>{
     // console.log('abc')
   let randomNum =  Math.floor(Math.random() * 3);
-  console.log(randomNum)
+//   console.log(randomNum)
 if (randomNum ===0){
     console.log('winner')
     }else if (randomNum === 1){
-        // <img src="https://i.gifer.com/3tfo.gif" alt="">
-        // document.getElementById('yourRWrong').src
-       let picture = document.createElement('img')
-       picture.setAttribute('src', 'https://i.gifer.com/3tfo.gif')
-       let shadow = document.querySelector('.hidden2')
     console.log('you lose')
-    shadow.append(picture)
 }else if(randomNum=== 2){
     console.log('almost')
 }else{
@@ -51,13 +47,13 @@ if (randomNum ===0){
 cup1.removeEventListener('click',reveal)
 cup2.removeEventListener('click',reveal)
 cup3.removeEventListener('click',reveal)
-
+// pebble.removeEventListener('click',reveal)
 }   
 
-// cup1.addEventListener('click',reveal)
-// cup2.addEventListener('click',reveal)
-// cup3.addEventListener('click',reveal)
-
+cup1.addEventListener('click',reveal)
+cup2.addEventListener('click',reveal)
+cup3.addEventListener('click',reveal)
+// pebble.addEventListener('click',reveal)
 // function startGame(){
 
 
@@ -116,24 +112,6 @@ const playB = () =>{
 
 
 //-------------------------------------------------------
-
-const showME = () =>{
-    playerOne.score+=10
-    }
-
-const jordan = () =>{
-    let randomNum =  Math.floor(Math.random() * 3);
-    if (randomNum % 2===0){
-        let picture = document.createElement('img')
-        picture.setAttribute('src', 'https://i.gifer.com/3tfo.gif')
-        let shadow = document.querySelector('.hidden2')
-     console.log('you lose')
-     shadow.replaceWith(picture)
-     alert('you lose')
-     shadow.classList.toggle('ghost')
-    }
-}
-
 
 
 
