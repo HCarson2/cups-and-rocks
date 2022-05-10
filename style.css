@@ -242,6 +242,7 @@ body{
 
   }
   .reload{
+    margin-left: 20px;
     width: 80px;
     height: 30px;
     border: solid red;

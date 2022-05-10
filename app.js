@@ -12,6 +12,23 @@ let playerTwo = {
     score: 0,
 
 }
+
+const determineRound = () =>{
+    let  score = 0
+    if (playerOne.score === 3 || playerTwo.score === 3){
+        alert ("You won Round 1")
+        alert ("Begin Round 2")
+    }
+    if (playerOne.score === 6 || playerTwo.score === 6){
+        alert ("You Won Round 2")
+        alert ("Begin Round 3")
+    }
+    if (playerOne.score === 9 || playerTwo.score === 9){
+        alert ("You Won Round 3")
+        alert ("You Are The Winner!")
+    }
+}
+
 function restart(){
     if(confirm("Refresh Game??"))
     {
@@ -69,20 +86,6 @@ btnStart.addEventListener('click', animations)
 // btnStart.addEventListener('click', leftroll)
 
 
-const determineRound = () =>{
-    if (playerOne.score >= 3 || playerTwo.score >= 3){
-        alert ("You won Round 1")
-        alert ("Begin Round 2")
-    }
-    if (playerOne.score >= 6 || playerTwo.score >= 6){
-        alert ("You Won Round 2")
-        alert ("Begin Round 3")
-    }
-    if (playerOne.score >= 9 || playerTwo.score >= 9){
-        alert ("You Won Round 3")
-        alert ("You Are The Winner!")
-    }
-}
 
 const addScoreToPlayerOne = () =>{
 
