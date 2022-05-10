@@ -14,19 +14,16 @@ let playerTwo = {
 }
 
 const determineRound = () =>{
-    let  score = 0
-    if (playerOne.score === 3 || playerTwo.score === 3){
-        alert ("You won Round 1")
-        alert ("Begin Round 2")
-    }
-    if (playerOne.score === 6 || playerTwo.score === 6){
-        alert ("You Won Round 2")
-        alert ("Begin Round 3")
-    }
-    if (playerOne.score === 9 || playerTwo.score === 9){
-        alert ("You Won Round 3")
-        alert ("You Are The Winner!")
-    }
+    let score = 0;
+    if (score === 3){
+        alert ("You won Round 1...Begin Round 2");
+     }
+    else if (score === 6){
+        alert ("You Won Round 2...Begin Round 3");
+     }
+    else (score === 9){
+        alert ("You Won Round 3...You Are The Winner!");
+        }
 }
 
 function restart(){
