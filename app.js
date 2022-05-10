@@ -26,7 +26,7 @@ let playerTwo = {
     
 //     }
 // }
-
+//Refresh function
 function restart(){
     if(confirm("Refresh Game??"))
     {
