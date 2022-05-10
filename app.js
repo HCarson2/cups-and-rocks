@@ -12,6 +12,13 @@ let playerTwo = {
     score: 0,
 
 }
+function restart(){
+    if(confirm("Refresh Game??"))
+    {
+        location.reload();
+    }
+}
+
 
 const wait = (ms) => new Promise (resolve => setTimeout(resolve, ms))
 const btnStart = document.getElementById('btn-start')
