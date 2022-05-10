@@ -101,13 +101,13 @@ const playA = () =>{
         // console.log(pointsA.textContent)
         // let score = 0;
         if (screen.textContent == 3){
-            alert ("Player 1 won Round 1...Begin Round 2");
+            alert ("Player 1 Has 3 Points!...only need 6 more points to win");
          }
         else if (screen.textContent == 6){
-            alert ("Player 1 Won Round 2...Begin Round 3")
+            alert ("Player 1 Has 6 Points")
          }
         else if (screen.textContent ==9){
-            alert ("Player 1 Won Round 3...Player 1 Is The Winner!")
+            alert ("Player 1 Has 9 Points!...Player 1 Has Won The Game!")
         
         }
         // determineRound()
@@ -119,13 +119,13 @@ const playA = () =>{
         let screen = document.querySelector('.scoreboardPointsB')
         screen.textContent= `${playerTwo.score}`
         if (screen.textContent == 3){
-            alert ("Player 2 won Round 1...Begin Round 2");
+            alert ("Player 2 Has 3 Points!...only need 6 more points to wi");
          }
         else if (screen.textContent == 6){
-            alert ("Player 2 Won Round 2...Begin Round 3")
+            alert ("Player 2 Has 6 Point")
          }
         else if (screen.textContent ==9){
-            alert ("Player 2 Won Round 3...Player 2 Is The Winner!")
+            alert ("Player 2 Has 9 Points!...Player 2 Has Won The Game!")
         
         }
         // determineRound()
