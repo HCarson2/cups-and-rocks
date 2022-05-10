@@ -88,7 +88,7 @@ body{
     margin-left: 250px;
     
 }
-
+ /* This class represents animation cup1 in JS */
 .cupOne{
     animation-name: rightroll;
     animation-duration: 2s;   
@@ -114,6 +114,7 @@ body{
     
 
 }
+/* This animation represents cup2 in JS */
 .cupTwo{
     animation-name: bounceup;
     animation-duration: 1.5s;
@@ -178,6 +179,7 @@ body{
     margin-right: 250px;
     
 }
+/* This animation represents cup3 in JS */
 .cupThree{
     animation-name: leftroll;
     animation-duration: 2s;
