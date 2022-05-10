@@ -1,6 +1,7 @@
 //-----------------------------------------------------
         //  Variables
 //-----------------------------------------------------
+//These are objests that I pulled from
 let playerOne = {
     myTurn: false,
     won_it_all: false,
