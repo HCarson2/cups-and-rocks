@@ -13,18 +13,19 @@ let playerTwo = {
 
 }
 
-const determineRound = () =>{
-    let score = 0;
-    if (score === 3){
-        alert ("You won Round 1...Begin Round 2");
-     }
-    else if (score === 6){
-        alert ("You Won Round 2...Begin Round 3");
-     }
-    else (score === 9){
-        alert ("You Won Round 3...You Are The Winner!");
-        }
-}
+// const determineRound = () =>{
+//     let score = 0;
+//     if (score === 3){
+//         alert ("You won Round 1...Begin Round 2");
+//      }
+//     else if (score === 6){
+//         alert ("You Won Round 2...Begin Round 3")
+//      }
+//     else if (score ===9){
+//         alert ("You Won Round 3...You Are The Winner!")
+    
+//     }
+// }
 
 function restart(){
     if(confirm("Refresh Game??"))
@@ -41,17 +42,20 @@ let cup2 = document.querySelector('.cup2')
 let cup3 = document.querySelector('.cup3')
 // let pebble = document.querySelector('.pebble')
 
+// This function put all of my Keyframes in motion at the same time
 const animations = async () =>{
    cup1.classList.add('cupOne')
    cup2.classList.add('cupTwo')  
    cup3.classList.add('cupThree')
 //    pebble.classList.add('pebble')
+//This awiat (3000) allowed my game to pause for 3 sec so the player could keep selecting cup
    await wait(3000)
    cup1.classList.remove('cupOne')
    cup2.classList.remove('cupTwo')
    cup3.classList.remove('cupThree')
 //    pebble.classList.remove('pebble')
 }
+//This function allowed me to grab a random number bettween 0 - 2 giving the player a 1/3 chances to win
 const reveal = () =>{
     // console.log('abc')
   let randomNum =  Math.floor(Math.random() * 3);
@@ -84,13 +88,14 @@ btnStart.addEventListener('click', animations)
 
 
 
-const addScoreToPlayerOne = () =>{
+// const addScoreToPlayerOne = () =>{
 
+
+// }
+// const addScoreToPlayerTwo = () =>{
 
 }
-const addScoreToPlayerTwo = () =>{
-
-}
+//This function allows the player to input their score manually in the scoreboard
 const playA = () =>{
     playerOne.score++
     let screen = document.querySelector('.scoreboardPointsA')
